@@ -4,11 +4,19 @@ body, html {
     width: 100%;
     height: 100%;
     font-family: 'Futura', sans-serif;
-    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    background: linear-gradient(45deg, #0f2027, #203a43, #2c5364);
+    background-size: 600% 600%;
+    animation: GradientAnimation 10s ease infinite;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+}
+
+@keyframes GradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .container {
@@ -17,7 +25,25 @@ body, html {
 
 h1 {
     font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.byline {
+    font-size: 1.2rem;
     margin-bottom: 2rem;
+}
+
+.github-link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.github-icon {
+    width: 20px;
+    height: 20px;
 }
 
 .buttons {

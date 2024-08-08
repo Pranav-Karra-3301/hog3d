@@ -6,10 +6,9 @@ body, html {
     font-family: 'Futura', sans-serif;
     background: linear-gradient(45deg, #000000, #008080, #FFA500, #FF1493);
     background-size: 600% 600%;
-    animation: GradientAnimation 5s ease infinite;
+    animation: GradientAnimation 15s ease infinite;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     color: white;
 }
@@ -24,6 +23,10 @@ body, html {
     100% {
         background-position: 0% 50%;
     }
+}
+
+.spacer-top {
+    height: 20vh; /* Adjust the height as needed to center the content */
 }
 
 .container {

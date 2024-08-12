@@ -1,15 +1,18 @@
 document.addEventListener("DOMContentLoaded", function() {
     const containers = document.querySelectorAll('.container');
-    let scrollIndex = 0;
+    let currentIndex = 0;
+
+    // Show the first section immediately
+    if (containers[currentIndex]) {
+        containers[currentIndex].classList.add('visible');
+        currentIndex++;
+    }
 
     window.addEventListener('scroll', function() {
         const scrolled = window.scrollY + window.innerHeight;
-        if (scrollIndex < containers.length && scrolled > containers[scrollIndex].offsetTop) {
-            containers[scrollIndex].classList.add('visible');
-            scrollIndex++;
+        if (currentIndex < containers.length && scrolled > containers[currentIndex].offsetTop) {
+            containers[currentIndex].classList.add('visible');
+            currentIndex++;
         }
     });
-
-    // Optionally, scroll to the first container when the page loads
-    window.scrollTo({ top: 0, behavior: 'smooth' });
 });

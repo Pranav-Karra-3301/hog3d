@@ -36,12 +36,6 @@ body, html {
     text-align: center;
 }
 
-.logo {
-    width: 150px;
-    height: auto;
-    margin-bottom: 20px;
-}
-
 .scroll-indicator {
     font-size: 1.5rem;
     margin-top: 20px;

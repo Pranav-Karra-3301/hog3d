@@ -1,12 +1,15 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate');
-            }
-        });
+    const containers = document.querySelectorAll('.container');
+    let scrollIndex = 0;
+
+    window.addEventListener('scroll', function() {
+        const scrolled = window.scrollY + window.innerHeight;
+        if (scrollIndex < containers.length && scrolled > containers[scrollIndex].offsetTop) {
+            containers[scrollIndex].classList.add('visible');
+            scrollIndex++;
+        }
     });
 
-    const elements = document.querySelectorAll('.content, .button');
-    elements.forEach(el => observer.observe(el));
+    // Optionally, scroll to the first container when the page loads
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 });

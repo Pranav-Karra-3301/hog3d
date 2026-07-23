@@ -3,7 +3,9 @@
 [![NumPy](https://img.shields.io/badge/NumPy-1.21.0+-blue.svg?style=flat&logo=numpy)](https://numpy.org/)
 [![Plotly](https://img.shields.io/badge/Plotly-5.3.1+-orange.svg?style=flat&logo=plotly)](https://plotly.com/)
 
-Welcome to the HOG3D Visualization repository! This project provides an interactive web interface to visualize the implementation and results of the Histogram of Oriented Gradients 3D (HOG3D) algorithm, particularly for detecting blocks in coronary arteries using medical imaging data in NIFTI format.
+Welcome to the HOG3D Visualization repository! This project is a raw NumPy implementation of the Histogram of Oriented Gradients 3D (HOG3D) algorithm for 3D CT data, particularly for detecting blocks in coronary arteries using medical imaging data in NIFTI format. It comes with an interactive web interface to walk through the implementation and its results.
+
+**Live demo:** [hog3d.vercel.app](https://hog3d.vercel.app) &nbsp;|&nbsp; **Interactive graphs:** [hog3d-visual.vercel.app](https://hog3d-visual.vercel.app)
 
 ## Features
 
@@ -28,7 +30,7 @@ Welcome to the HOG3D Visualization repository! This project provides an interact
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/Pranav-Karra-3301/HOG3D-Visualization.git
+    git clone https://github.com/Pranav-Karra-3301/hog3d.git
     cd hog3d
     ```
 
@@ -63,3 +65,7 @@ For a detailed explanation of the HOG3D implementation, refer to the provided PD
 <object data="HOG3D.pdf" type="application/pdf" width="800" height="600">
     <p>Your browser does not support PDFs. <a href="HOG3D.pdf">Download the PDF</a>.</p>
 </object>
+
+---
+
+Built by [Pranav Karra](https://pranavkarra.me).
